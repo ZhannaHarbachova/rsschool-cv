@@ -5,8 +5,8 @@ body {
     line-height: 1.5;
     color: #4d2323;
   }
-  
-  .container {
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -36,8 +36,6 @@ body {
     text-align: right;
 }
 
-
-
 .section {
     width: 48%;
     padding-right: 2%;
@@ -60,8 +58,6 @@ h1.section-title {
     letter-spacing: 5px;
     color: #829985;
 }
-
-
 
 .section a {
     text-decoration: none;
