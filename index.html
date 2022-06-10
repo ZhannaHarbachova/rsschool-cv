@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,87 +28,140 @@
     <main class="main">
         <div class="container main-container">
             <section class="section" id="profile">
-                <h1 class="section-title">Harbachova Zhanna</h1>
-                <p>Junior QA Engineer</p>
+                <img src="images/645659_cats.jpg" class="profile-avatar" height="200" alt="My avatar">
+                <div class="profile-name">
+                    <h1 class="section-title">Harbachova Zhanna</h1>
+                    <p>Junior QA Engineer</p>
+                </div>
             </section>
-            <section class="section" id="contacts">
-                <h1 class="section-title">Contacts</h1>
-                <ul class="contacts-list">
-                    <li class="contacts-item">E-mail: gorbacheva.zh.v@gmail.com</li>
-                    <li class="contacts-item">Phone number: +375 (29) 889-06-01</li>
-                    <li class="contacts-item">Telegram: @snejca</li>
-                    <li class="contacts-item">GitHub: <a href="https://github.com/snejcazh" class="github-link">snejcazh</a></li>
-                </ul>
-            </section>
-            <section class="section" id="summary">
-                <h1 class="section-title">Summary</h1>
-                <p>My goal: to get a job as a junior qa</p>
-            </section>
-            <section class="section" id="skills">
-                <h1 class="section-title">Skills</h1>
-                <ul class="skills-list">
-                    <li class="skills-item"><span class="skills-name">JavaScript, Html, CSS</span></li>
-                    <li class="skills-item"><span class="skills-name">GIT, GITHUB, GIT BASH</span> Create a repository,
-                         add a file, commit, push, create branches, merge. Knowledge of Linux console commands
-                        (cd, pwd, mv, vim, mkdir, touch, ls -la, find, tail)</li>
-                    <li class="skills-item"><span class="skills-name">SQL</span> SELECT, DISTINCT, UPDATE, INSERT INTO,
-                         ORDER BY (DESC, ASC), JOIN</li>
-                    <li class="skills-item"><span class="skills-name">DEVTOOLS</span></li>
-                    <li class="skills-item">POSTMAN Send GET, POST requests; passing values to the environment,
-                         launch and export the collection</li>
-                    <li class="skills-item">TEST ARTIFACTS Checklist, test-cases, bug report</li>
-                </ul>
-            </section>
-            <section class="section" id="code">
-                <h1 class="section-title">Code</h1>
-                <pre>
+            <div class="sidebar-sections">
+                <section class="section" id="contacts">
+                    <h2 class="section-title">Contacts</h2>
+                    <ul class="contacts-list">
+                        <li class="contacts-item">
+                            <img src="images/email.png" width="30" alt="E-mail">
+                            <div class="contact-text">gorbacheva.zh.v@gmail.com</div>
+                        </li>
+                        <li class="contacts-item">
+                            <img src="images/phone.svg" width="30" alt="Phone">
+                            <div class="contact-text">+375 (29) 889-06-01</div>
+                        </li>
+                        <li class="contacts-item">
+                            <img src="images/telegram.svg" width="30" alt="Telegram">
+                            <div class="contact-text">@snejca</div>
+                        </li>
+                        <li class="contacts-item">
+                            <img src="images/github.svg" width="30" alt="GitHub">
+                            <div class="contact-text">
+                                <a href="https://github.com/snejcazh" class="github-link" target="_blank">snejcazh</a>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="section" id="courses">
+                    <h2 class="section-title">Courses</h2>
+                    <ul class="courses-list">
+                        <li class="courses-item"><span><b><a href="https://ksendzov.com/" target="_blank">VADIM KSENDZOV “PRACTICAL COURSES OF MANUAL QA”</a></b> - in process</span></li>
+                        <li class="courses-item"><img src="images/course_mediasoft.png" alt="Manual testing. Academia Mediasoft"></li>
+                        <li class="courses-item"><img src="images/course_automation.png" alt="UI testing with Pytest"></li>
+                        <li class="courses-item"><img src="images/course_games.png" alt="Game testing"></li>
+                        <li class="courses-item"><img src="images/course_sql.png" alt="SQL"></li>
+                        <li class="courses-item"><img src="images/course_js.png" alt="JS"></li>
+                    </ul>
+                </section>
+                <section class="section" id="projects">
+                    <h2 class="section-title">Educational project</h2>
+                    <p class="project-content">
+                        <a href="https://github.com/snejcazh/StepikFinalProject" target="_blank">UI testing with Python, Pytest</a>
+                    </p>
+                    <p class="project-content">
+                        <a href="https://github.com/snejcazh/Postman" target="_blank">API testing with Postman</a>
+                    </p>
+                    <p class="project-content">
+                        <a href="https://github.com/snejcazh/SQL" target="_blank">Working with a database in sql</a>
+                    </p>
+                    <p class="project-content">
+                        <a href="https://github.com/snejcazh/TestDocumentation" target="_blank">Test documentation</a>
+                    </p>
+                </section>
+                <section class="section" id="soft_skills">
+                    <h2 class="section-title">Soft Skills</h2>
+                    <ul class="skills-list">
+                        <li class="skills-item">Responsible</li>
+                        <li class="skills-item">Ability to quickly learn new things</li>
+                        <li class="skills-item">Diligence</li>
+                    </ul>
+                </section>
+                <section class="section" id="languages">
+                    <h2 class="section-title">Languages</h2>
+                    <ul class="languages-list">
+                        <li class="languages-item">English language - A2</li>
+                        <li class="languages-item">Russian - Native</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="main-sections">
+                <section class="section" id="summary">
+                    <h2 class="section-title">Summary</h2>
+                    <p> I am a beginner QA Engineer. My main quality is the ability to learn quickly.
+                        My goal is to learn everything new and interesting.</p>
+                </section>
+
+                <section class="section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+                    <ul class="skills-list">
+                        <li class="skills-item"><span class="skills-name">JavaScript, Html, CSS</span></li>
+                        <li class="skills-item"><span class="skills-name">GIT, GITHUB, GIT BASH</span> Create a repository,
+                            add a file, commit, push, create branches, merge. Knowledge of Linux console commands
+                            (cd, pwd, mv, vim, mkdir, touch, ls -la, find, tail)</li>
+                        <li class="skills-item"><span class="skills-name">SQL</span> SELECT, DISTINCT, UPDATE, INSERT INTO,
+                            ORDER BY (DESC, ASC), JOIN</li>
+                        <li class="skills-item"><span class="skills-name">DEVTOOLS</span></li>
+                        <li class="skills-item"><span class="skills-name">POSTMAN</span> Send, Get, Post requests; passing values to the environment,
+                            launch and export the collection</li>
+                        <li class="skills-item"><span class="skills-name">TEST ARTIFACTS</span> Checklist, test-cases, bug report</li>
+                        <li class="skills-item"><span class="skills-name">PYTHON, PYTEST</span> (basic knowledge)</li>
+                    </ul>
+                </section>
+                <section class="section" id="code">
+                    <h2 class="section-title">Code</h2>
+                    <a href="https://github.com/snejcazh/stepik_auto_tests_course/blob/main/Task_2_2_8.py" class="example-code" target="_blank">
+                        <pre>
 <code>
-function positiveSum(arr) {
-    result = 0
-    for (let i = 0; i &lt; arr.length; i++) {
-        result += arr[i] &gt; 0 ? arr[i] : 0;
-    }
-    return result;
-}
+    import os
+    from selenium import webdriver
+    from selenium.webdriver.common.by import By
+    
+    browser = webdriver.Chrome()
+    browser.get("http://suninjuly.github.io/file_input.html")
+    
+    browser.find_element(By.NAME, "firstname").send_keys("Misha")
+    browser.find_element(By.NAME, "lastname").send_keys("Ivanov")
 </code>
-        </pre>
-            </section>
-            <section class="section" id="experience">
-                <h1 class="section-title">Experience</h1>
-                <p>JUNE 2016- OCTOBER 2021 “Ankor”, asessor</p>
-                <ul class="experience-list">
-                    <li class="experience-item">Testing of websites and mobile/web applications</li>
-                    <li class="experience-item">Creation check-lists, test-cases, writing bug reports</li>
-                    <li class="experience-item">Functional testing and UI/UX testing, regression and smoke testing</li>
-                </ul>
-            </section>
-            <section class="section" id="courses">
-                <h1 class="section-title">Courses</h1>
-                <ul class="courses-list">
-                    <li class="courses-item">VADIM KSENDZOV “PRACTICAL COURSES OF MANUAL QA” - IN PROGRESS</li>
-                    <li class="courses-item">ACADEMY MEDIASOFT “TESTING”</li>
-                    <li class="courses-item"><a href="https://goo.su/YOB8" class="courses-link">“BASIC OF GAMES TESTING”</a></li>
-                    <li class="courses-item"><a href="https://goo.su/mzqqy" class="courses-link">“AUTOMATION
-                        TESTING WITH PYTHON AND SELENIUM”</a></li>
-                </ul>
-            </section>
-            <section class="section" id="soft_skills">
-                <h1 class="section-title">Soft Skills</h1>
-                <ul class="skills-list">
-                    <li class="skills-item">Responsible</li>
-                    <li class="skills-item">Ability to quickly learn new things</li>
-                </ul>
-            </section>
-            <section class="section" id="languages">
-                <h1 class="section-title">Languages</h1>
-                <ul class="languages-list">
-                    <li class="languages-item">English language - A2</li>
-                    <li class="languages-item">Russian - Native</li>
-                </ul></section>
+                        </pre>
+                    </a>
+                </section>
+                <section class="section" id="experience">
+                    <h2 class="section-title">Experience</h2>
+                    <p>JUNE 2016 - OCTOBER 2021 “Ankor”, asessor</p>
+                    <br>
+                    <ul class="experience-list">
+                        <li class="experience-item">Testing of websites and mobile/web applications</li>
+                        <li class="experience-item">Creation check-lists, test-cases, writing bug reports</li>
+                        <li class="experience-item">Functional testing and UI/UX testing, regression and smoke testing</li>
+                    </ul>
+                </section>
+            </div>
         </div>
     </main>
     <footer class="footer">
-        <div class="container"></div>
+        <div class="container footer-container">
+            <a href="https://rs.school/js/" class="footer-rsschool" target="_blank"><img src="images/rs_school_js.svg" width="250" alt="rsschool"></a>
+            <p>
+                <a href="https://github.com/snejcazh" target="_blank"><img src="images/github.svg" width="120" height="120" alt="My github profile"></a>
+                <span>© 2022</span>
+            </p>
+        </div>
     </footer>
 </body>
 </html>
