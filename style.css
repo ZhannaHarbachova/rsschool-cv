@@ -6,11 +6,16 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
     color: #4d2323;
+
   }
 
 .container {
@@ -19,7 +24,6 @@ body {
 }
 
 header {
-    height: 80px;
     display: flex;
     justify-content: right;
 }
@@ -31,15 +35,23 @@ header .container{
     display:flex;
     justify-content: flex-end;
     align-items: center;
+
     list-style: none;
 }
 
 .nav-link {
     padding: 0 10px;
+
     line-height: 50px;
     text-decoration: none;
     color: #5d7260;
+
     transition: .3s;
+}
+
+.nav-link:hover {
+    color: #6b826e;
+    font-weight: 600;
 }
 
 .main-container {
@@ -48,14 +60,17 @@ header .container{
 }
 
 #profile {
-    width: 100%;
-    text-align: right;
     display: flex;
     justify-content: space-evenly;
+
+    width: 100%;
+    padding-top: 20px;
     height: 220px;
+
+    text-align: right;
+
     border-bottom: 10px solid #6b826e;
     border-top: 10px solid #6b826e;
-    padding-top: 20px;
 }
 
 #profile img {
@@ -93,6 +108,9 @@ h1.section-title {
 
 .contact-text {
     margin-left: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
 }
 
 #contacts ul,
@@ -117,10 +135,12 @@ h1.section-title {
 }
 
 .courses-item img {
-    border: 1px solid #6b826e;
     width: 90%;
     cursor: pointer;
     margin-bottom: 30px;
+
+    border: 1px solid #6b826e;
+
     transition: all 1s ease-out;
     -moz-transition: all 1s ease-out;
     -o-transition: all 1s ease-out;
@@ -140,7 +160,7 @@ h1.section-title {
 
 .main-sections .section,
 .sidebar-sections .section {
-    width: 96%;
+    width: 92%;
     padding: 4%;
     margin: 20px 0;
     border-radius: 5%;
@@ -165,6 +185,7 @@ h1.section-title {
 .section a {
     text-decoration: none;
     color: #829985;
+
     transition: color 0.5s;
 }
 
@@ -183,6 +204,8 @@ h2.section-title {
 #code pre {
     background-color: #d5ddd6;
     border-radius: 10%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 a.example-code {
@@ -192,6 +215,7 @@ a.example-code {
 .footer-container {
     display: flex;
     justify-content: space-between;
+
     border-top: 10px solid #6b826e;
 }
 
@@ -201,22 +225,50 @@ a.example-code {
 
 .footer-container span {
     font-weight: bold;
+    white-space: nowrap;
+}
+
+.buttonup {
+    display: none;
 }
 
 @media (max-width: 768px) {
-    .section,
-    .sidebar-sections,
-    .main-sections {
+    .container {
+        overflow: hidden;
+    }
+
+   .sidebar-sections,
+    .main-sections,
+    .section {
         width: 100%;
     }
+
     .nav-list {
         flex-flow: row wrap;
         justify-content: space-between;
     }
+
     h1.section-title {
         font-size: 24px;
     }
+
     h2 {
         text-align: center;
+    }
+
+    .buttonup {
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 420px) {
+    .profile-avatar {
+        display: none;
+    }
+
+    #profile {
+        background-color: #d7ded8;
     }
 }

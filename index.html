@@ -40,18 +40,24 @@
                     <ul class="contacts-list">
                         <li class="contacts-item">
                             <img src="images/email.png" width="30" alt="E-mail">
-                            <div class="contact-text">gorbacheva.zh.v@gmail.com</div>
+                            <div class="contact-text">
+                                <a href="mailto:gorbacheva.zh.v@gmail.com">gorbacheva.zh.v@gmail.com</a>
+                            </div>
                         </li>
                         <li class="contacts-item">
                             <img src="images/phone.svg" width="30" alt="Phone">
-                            <div class="contact-text">+375 (29) 889-06-01</div>
+                            <div class="contact-text">
+                                <a href="tel:+375298890601">+375 (29) 889-06-01</a>
+                            </div>
                         </li>
                         <li class="contacts-item">
                             <img src="images/telegram.svg" width="30" alt="Telegram">
-                            <div class="contact-text">@snejca</div>
+                            <div class="contact-text">
+                                <a href="http://t.me/snejca" target="_blank">@snejca</a>
+                            </div>
                         </li>
                         <li class="contacts-item">
-                            <img src="images/github.svg" width="30" alt="GitHub">
+                            <img src="images/github_small.svg" width="30" alt="GitHub">
                             <div class="contact-text">
                                 <a href="https://github.com/snejcazh" class="github-link" target="_blank">snejcazh</a>
                             </div>
@@ -131,10 +137,10 @@
     import os
     from selenium import webdriver
     from selenium.webdriver.common.by import By
-    
+
     browser = webdriver.Chrome()
     browser.get("http://suninjuly.github.io/file_input.html")
-    
+
     browser.find_element(By.NAME, "firstname").send_keys("Misha")
     browser.find_element(By.NAME, "lastname").send_keys("Ivanov")
 </code>
@@ -150,6 +156,9 @@
                         <li class="experience-item">Creation check-lists, test-cases, writing bug reports</li>
                         <li class="experience-item">Functional testing and UI/UX testing, regression and smoke testing</li>
                     </ul>
+                    <a href="#" title="Вернуться наверх" class="buttonup">
+                        <img src="images/top_icon.svg" width="50" alt="button top">
+                    </a>
                 </section>
             </div>
         </div>
@@ -158,7 +167,7 @@
         <div class="container footer-container">
             <a href="https://rs.school/js/" class="footer-rsschool" target="_blank"><img src="images/rs_school_js.svg" width="250" alt="rsschool"></a>
             <p>
-                <a href="https://github.com/snejcazh" target="_blank"><img src="images/github.svg" width="120" height="120" alt="My github profile"></a>
+                <a href="https://github.com/snejcazh" target="_blank"><img src="images/github.svg" width="130" height="120" alt="My github profile"></a>
                 <span>© 2022</span>
             </p>
         </div>
