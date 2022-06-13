@@ -85,6 +85,7 @@ header .container{
 h1.section-title {
     font-size: 40px;
     font-weight: bold;
+    text-align: center;
 }
 
 .profile-name p {
