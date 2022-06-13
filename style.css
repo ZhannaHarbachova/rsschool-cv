@@ -243,6 +243,29 @@ a.example-code {
         width: 100%;
     }
 
+    .sidebar-sections {
+        margin-right: 0;
+        order: 2;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sidebar-sections .section {
+        order: 1;
+    }
+
+    #contacts {
+        order: 2;
+    }
+
+    .sidebar-sections .section {
+        background-color: #f9f2ec;
+    }
+
+    #experience {
+        margin-bottom: 0;
+    }
+
     .nav-list {
         flex-flow: row wrap;
         justify-content: space-between;
@@ -250,6 +273,7 @@ a.example-code {
 
     h1.section-title {
         font-size: 24px;
+        text-align: center;
     }
 
     h2 {
@@ -260,6 +284,15 @@ a.example-code {
         display: block;
         width: 50px;
         height: 50px;
+    }
+
+    .contacts-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contacts-buttonup {
+        margin-right: 70px;
     }
 }
 
